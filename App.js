@@ -54,7 +54,6 @@ export default class App extends React.Component {
 
   async getDirections(startLoc, desLoc) {
     try {
-      const respJson = await resp.json();
       const response = respJson.routes[0]
       const distanceTime = response.legs[0]
       const distance = distanceTime.distance.text
